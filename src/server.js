@@ -7,5 +7,5 @@ const respond = (req, res, next) => {
 
 const server = restify.createServer();
 server.get("/hello/:name", respond);
-
-server.listen(8080);
+console.log(process.env.PORT);
+server.listen(process.env.PORT);
